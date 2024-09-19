@@ -1,0 +1,128 @@
+
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background: url('https://images6.alphacoders.com/131/thumb-1920-1319737.jpeg') no-repeat center center fixed;
+    background-size: cover;
+    background-position: center;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background-color: rgba(0, 29, 61, 0.427); /* Semi-transparent background */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Slightly darker shadow for better visibility */
+    width: 500px;
+    text-align: center;
+}
+
+/* Input Section */
+.input-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.input-section input[type="text"] {
+    width: 80%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    margin-bottom: 10px;
+}
+
+.input-section input[type="datetime-local"] {
+    width: 80%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    margin-bottom: 10px;
+}
+
+.input-section button {
+    width: 50%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #ffc300;
+    color: #000814;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.input-section button:hover {
+    background-color: #ffd60a;
+}
+
+/* Task List */
+#taskList {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#taskList li {
+    background-color: rgba(0, 53, 102, 0.8); /* Semi-transparent task items */
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+#taskList li .task-content {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+#taskList li .buttonGroup {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+#taskList li .deleteButton, #taskList li .completeButton {
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#taskList li .deleteButton {
+    background-color: #ff5c5c;
+}
+
+#taskList li .deleteButton:hover {
+    background-color: #ff1c1c;
+}
+
+#taskList li .completeButton {
+    background-color: #00ff00;
+}
+
+#taskList li .completeButton:hover {
+    background-color: #00cc00;
+}
+
+#taskList li.completed {
+    text-decoration: line-through;
+    background-color: rgba(0, 34, 68, 0.8);
+}
+
+#taskList li .time {
+    color: #ffd60a;
+    margin-top: 5px;
+    font-size: 0.9em;
+}
